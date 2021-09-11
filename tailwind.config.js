@@ -36,6 +36,7 @@ module.exports = {
             'footer-text': '#E5E5E5'
         },
         spacing: {
+            '-16px': '-16px',
             '1px': '1px',
             '3px': '3px',
             '4px': '4px',
@@ -45,14 +46,18 @@ module.exports = {
             '14px': '14px',
             '18px': '18px',
             '20px': '20px',
+            '22px': '22px',
             '23px': '23px',
             '25px': '25px',
+            '33px': '33px',
             '46px': '46px',
             '58px': '58px',
             '60px': '60px',
+            '84px': '84px',
 
         },
         width: {
+            '45px': '45px',
             '50px': '50px',
             '90px': '90px',
             '310px': '310px',
