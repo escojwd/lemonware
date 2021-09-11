@@ -11,6 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/tailwind.css">
 </head>
-<body>
+<body class="font-poppins">
+    <header>
+        <div class="flex justify-between w-86% m-auto mt-18px items-center">
+            <div class="w-90px">
+                <img class="" src="./src/images/lemonware-logo-red.png" alt="logo red">
+            </div>
+            <div class="w-50px">
+                <img src="./src/images/burger-menu.svg" alt="burger menu">
+            </div>
+        </div>
+    </header>
+    <section class="w-86% mt-46px m-auto grid lg:gap-20 lg:grid-cols-11">
+        <div class="lg:col-span-6">
+            <nav>
+                <ul class="after-bottom inline-flex gap-23px text-15px font-semibold text-unfocused after:block after:bg-pink-300">
+                    <li class="active text-focused">Hosting</li>
+                    <li class="opacity-88 hover:text-focused">Domain</li>
+                    <li class="opacity-88 hover:text-focused">SEO</li>
+                    <li class="opacity-88 hover:text-focused">Email</li>
+                </ul>
+            </nav>
+            <div>
+                <h1 class="mt-20px text-32px font-bold leading-46px">Premium Web Hosting For Your Website</h1>
+                <p class="mt-5px text-16px font-inter leading-28px text-regular tracking-wider">Blazing fast web hosting for individuals and businesses of all sizes backed by 24x7x365 Support. </p>
+            </div>
+            <div class="mt-18px lg:hidden">
+                <img class="w-310px" src="./src/images/woman.png" alt="Woman"/>
+            </div>
+            <div class="mt-58px flex justify-between relative w-full-plus-16 right-2">
+                <a href="#" class="btn btn-primary">Create an Account</a>
+                <button class="btn">Choose your plan</button>
+            </div>
+        </div>
+        <div class="hidden lg:flex justify-end lg:col-span-5">
+            <img class="w-500px" src="./src/images/woman.png" alt="Woman"/>
+        </div>
+    </section>
 </body>
 </html>
