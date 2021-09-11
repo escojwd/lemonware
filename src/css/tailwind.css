@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .after-bottom {
+        position: relative;
+        z-index: 0;
+    }
+
+    .after-bottom:after {
+        content: '';
+        position: absolute;
+        left: 3px;
+        top: calc(1.5em + 3px);
+        height: 1px;
+        width: calc(100% - 6px);
+        background-color: #D6D4D4;
+    }
+
+    .after-bottom li {
+        position: relative;
+        z-index: 1;
+    }
+
+    .after-bottom li:after {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: calc(1.5em + 3px);
+        height: 1px;
+        width: calc(100% - 10px);
+        background-color: #D6D4D4;
+    }
+
+    .after-bottom li.active:after {
+        background-color: #B00000;
+    }
+
+    .after-bottom li:hover:after {
+        background-color: #B00000;
+    }
+
+    .btn {
+        @apply px-14px py-12px text-14px leading-6 rounded-lg border-1px border-black;
+    }
+
+    .btn-primary {
+        @apply bg-focused text-white border-none;
+    }
+
+    .btn-wide {
+        @apply px-60px py-10px font-bold;
+    }
+
+    
+}
