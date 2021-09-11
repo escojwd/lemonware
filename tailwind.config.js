@@ -4,7 +4,7 @@ module.exports = {
   theme: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
-        inter: ['Inter', 'sans-serif']
+        inter: ['Inter', 'serif']
       },
     extend: {
         fontSize: {
@@ -51,6 +51,7 @@ module.exports = {
             '25px': '25px',
             '33px': '33px',
             '46px': '46px',
+            '49px': '49px',
             '58px': '58px',
             '60px': '60px',
             '84px': '84px',
@@ -74,6 +75,9 @@ module.exports = {
         },
         lineHeight: {
             '46px': '46px'
+        },
+        letterSpacing: {
+            '005': '0.05rem'
         }
     },
   },
