@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   purge: ['index.html'],
   darkMode: false, // or 'media' or 'class'
@@ -82,5 +84,13 @@ module.exports = {
     },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    plugin(function({ addUtilities }){
+        addUtilities({
+            '.rotate-y-180': {
+                transform: 'rotateY(180deg)'
+            }
+        });
+    })
+  ],
 }

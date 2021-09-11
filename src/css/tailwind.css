@@ -52,10 +52,4 @@
     .btn-wide {
         @apply px-60px py-10px font-bold;
     }
-
-    .rotate-y-180 {
-        transform: rotateY(180deg);
-    }
-
-    
 }
