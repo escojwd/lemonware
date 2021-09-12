@@ -22,6 +22,7 @@ module.exports = {
             '25px': '25px',
             '28px': '28px',
             '32px': '32px',
+            '34px': '34px',
             '42px': '42px',
             '48px': '48px',
             '50px': '50px',
@@ -46,16 +47,26 @@ module.exports = {
             '10px': '10px',
             '12px': '12px',
             '14px': '14px',
+            '17px': '17px',
             '18px': '18px',
             '20px': '20px',
             '22px': '22px',
             '23px': '23px',
+            '24px': '24px',
             '25px': '25px',
+            '31px': '31px',
             '33px': '33px',
+            '34px': '34px',
+            '37px': '37px',
+            '40px': '40px',
+            '44px': '44px',
             '46px': '46px',
+            '47px': '47px',
             '49px': '49px',
             '58px': '58px',
             '60px': '60px',
+            '66px': '66px',
+            '70px': '70px',
             '84px': '84px',
 
         },
@@ -63,11 +74,20 @@ module.exports = {
             '45px': '45px',
             '50px': '50px',
             '90px': '90px',
+            '100px': '100px',
+            '260px': '260px',
             '310px': '310px',
             '500px': '500px',
             '600px': '600px',
             '86%': '86%',
+            '87%': '87%',
+            '88%': '88%',
+            '93%': '93%',
             'full-plus-16': 'calc(100% + 16px)'
+        },
+        height: {
+            '218px': '218px',
+            '252px': '252px',
         },
         opacity: {
             '88': '0.88'
@@ -76,6 +96,8 @@ module.exports = {
             '1px': '1px'
         },
         lineHeight: {
+            '30px': '30px',
+            '32px': '32px',
             '46px': '46px'
         },
         letterSpacing: {
