@@ -53,51 +53,15 @@
         @apply px-60px py-10px font-bold;
     }
 
-    .carousel-open:checked + .carousel-item {
-        position: static;
-        opacity: 100;
+    .-calc-vw-20px {
+        left: calc(100vw - theme('spacing.20px'))
     }
 
-    .carousel-item {
-        -webkit-transition: opacity 1s ease-out;
-        transition: opacity 0.3s ease-out;
+    .-calc-vw-10px {
+        left: calc(100vw - theme('spacing.10px'))
     }
 
-    #carousel-1:checked ~ .control-1,
-    #carousel-2:checked ~ .control-2,
-    #carousel-3:checked ~ .control-3, 
-    #carousel-4:checked ~ .control-4 {
-        display: block;
-    }
-
-    .carousel-indicators {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 10;
-    }
-
-    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet, 
-    #carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
-        color: #B00000;
-    }
-
-    #offer-carousel-1:checked ~ .control-1,
-    #offer-carousel-2:checked ~ .control-2,
-    #offer-carousel-3:checked ~ .control-3 {
-        display: block;
-    }
-
-    #offer-carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-    #offer-carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-    #offer-carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-        color: #B00000;
+    .feature-option div {
+        @apply flex justify-start gap-30px mb-15px font-semibold text-regular
     }
 }

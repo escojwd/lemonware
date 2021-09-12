@@ -47,6 +47,7 @@ module.exports = {
             '10px': '10px',
             '12px': '12px',
             '14px': '14px',
+            '15px': '15px',
             '17px': '17px',
             '18px': '18px',
             '20px': '20px',
@@ -54,15 +55,20 @@ module.exports = {
             '23px': '23px',
             '24px': '24px',
             '25px': '25px',
+            '28px': '28px',
+            '30px': '30px',
             '31px': '31px',
+            '32px': '32px',
             '33px': '33px',
             '34px': '34px',
+            '35px': '35px',
             '37px': '37px',
             '40px': '40px',
             '44px': '44px',
             '46px': '46px',
             '47px': '47px',
             '49px': '49px',
+            '56px': '56px',
             '58px': '58px',
             '60px': '60px',
             '66px': '66px',
@@ -75,7 +81,9 @@ module.exports = {
             '50px': '50px',
             '90px': '90px',
             '100px': '100px',
+            '237px': '237px',
             '260px': '260px',
+            '300px': '300px',
             '310px': '310px',
             '500px': '500px',
             '600px': '600px',
@@ -87,15 +95,21 @@ module.exports = {
         },
         height: {
             '218px': '218px',
-            '252px': '252px',
+            '252px': '252px'
         },
         opacity: {
             '88': '0.88'
         },
         borderWidth: {
-            '1px': '1px'
+            '1px': '1px',
+            '2px': '2px'
+        },
+        borderRadius: {
+            '15px': '15px'
         },
         lineHeight: {
+            '18px': '18px',
+            '25px': '25px',
             '30px': '30px',
             '32px': '32px',
             '46px': '46px'
