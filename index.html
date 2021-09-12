@@ -12,11 +12,34 @@
 </head>
 <body class="font-poppins">
     <header>
-        <div class="flex justify-between w-86% m-auto mt-18px items-center">
+        <div class="flex justify-between items-center w-86% m-auto mt-18px lg:justify-start lg:mt-40px">
             <div class="w-90px">
                 <a class="cursor-pointer" href="#"><img class="" src="./src/images/lemonware-logo-red.png" alt="logo red"></a>
             </div>
-            <div class="w-50px">
+            <div class="hidden w-full-minus-90 lg:grid grid-cols-10 items-center text-15px font-semibold 2xl:text-17px">
+                <div class="col-span-6 flex justify-around">
+                    <div class="after-bottom text-unfocused">
+                        <a class="active text-focused" href="#">Our Services</a>
+                    </div>
+                    <div class="flex justify-between w-250px after-bottom after-bottom__no-border  2xl:w-300px">
+                        <a class="hover:text-focused" href="#">About</a>
+                        <a class="hover:text-focused" href="#">Blog&News</a>
+                        <a class="hover:text-focused" href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="w-250px col-span-2 col-start-8 flex justify-between 2xl:w-300px">
+                    <div class="after-bottom after-bottom__no-border">
+                        <a class="hover:text-focused" href="#">Account</a>
+                    </div>
+                    <div class="h-19px bg-unfocused w-1px"></div>
+                    <div class="inline-block">
+                        <img class="inline-block align-middle" src="./src/images/phone.svg" alt="phone">
+                        <a class="text-16px" href="tel:+2349067322844">+2349067322844</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="w-50px lg:hidden">
                 <img class="cursor-pointer" src="./src/images/burger-menu.svg" alt="burger menu">
             </div>
         </div>
@@ -24,7 +47,7 @@
     <section class="w-86% mt-46px m-auto grid lg:gap-20 lg:grid-cols-11">
         <div class="lg:col-span-6">
             <nav>
-                <ul class="after-bottom inline-flex gap-23px text-15px font-semibold text-unfocused after:block after:bg-pink-300">
+                <ul class="after-bottom inline-flex gap-23px text-15px font-semibold text-unfocused">
                     <li class="active text-focused cursor-pointer">Hosting</li>
                     <li class="opacity-88 hover:text-focused cursor-pointer">Domain</li>
                     <li class="opacity-88 hover:text-focused cursor-pointer">SEO</li>

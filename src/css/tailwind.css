@@ -18,12 +18,16 @@
         background-color: #D6D4D4;
     }
 
-    .after-bottom li {
+    .after-bottom__no-border:after {
+        background-color: transparent;
+    }
+
+    .after-bottom >* {
         position: relative;
         z-index: 1;
     }
 
-    .after-bottom li:after {
+    .after-bottom >*:after {
         content: '';
         position: absolute;
         left: 5px;
@@ -33,11 +37,15 @@
         background-color: #D6D4D4;
     }
 
-    .after-bottom li.active:after {
+    .after-bottom__no-border >*:after {
+        background-color: transparent;
+    }
+
+    .after-bottom >*.active:after {
         background-color: #B00000;
     }
 
-    .after-bottom li:hover:after {
+    .after-bottom >*:hover:after {
         background-color: #B00000;
     }
 
