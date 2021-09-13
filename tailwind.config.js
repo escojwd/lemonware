@@ -100,7 +100,8 @@ module.exports = {
             '88%': '88%',
             '93%': '93%',
             'full-plus-16': 'calc(100% + 16px)',
-            'full-minus-90': 'calc(100% - 90px)'
+            'full-minus-90': 'calc(100% - 90px)',
+            'screen/2': 'calc(100vw / 2)'
         },
         height: {
             '19px': '19px',
@@ -131,6 +132,7 @@ module.exports = {
             '25px': '25px',
             '30px': '30px',
             '32px': '32px',
+            '40px': '40px',
             '46px': '46px',
             '60px': '60px',
             '77px': '77px',
