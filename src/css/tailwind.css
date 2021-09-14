@@ -70,10 +70,22 @@
     }
 
     .burger-menu {
-        @apply bg-background h-full w-full pt-37px pr-27px pl-37px fixed -top-full transition-all duration-500 bottom-0 right-0 left-0 z-50
+        @apply bg-background h-full w-full pt-37px pr-27px pl-37px fixed -top-full transition-all duration-500 bottom-0 right-0 left-0 z-50;
     }
 
     .burger-nav-after li {
         @apply cursor-pointer after-bottom after-bottom__no-border; 
     }
+
+    .offer-carousel-content {
+        @apply font-inter text-regular text-16px font-semibold; 
+    }
+
+    .offer-carousel-content>div {
+        @apply flex items-baseline mb-15px;
+    }
+
+    /* .offer-carousel-content img {
+        @apply w-18px mr-25px;
+    } */
 }

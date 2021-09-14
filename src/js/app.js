@@ -7,5 +7,5 @@ const carouselElements = document.querySelectorAll('.carousel');
 
 carouselElements.forEach(element => {
     const carousel = new Carousel(element);
-    carousel.spin();
+    // carousel.spin();
 });
