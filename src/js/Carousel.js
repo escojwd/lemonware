@@ -4,6 +4,7 @@ export default class Carousel {
      * @param {HTMLElement} element 
      */
     constructor(element) {
+        this.interval = null;
         this.element = element;
         this.dots = this.element.querySelector('.carousel-dots').children[0].children;
         this.count = 0;
@@ -97,10 +98,22 @@ export default class Carousel {
     }
 
     spin(forward = true) {
+        if(this.isRunning()) {
+            return;
+        }
         this.interval = setInterval(() => this.slide(forward), 2000);
     }
 
     stop() {
+        this.itemsContainer.style.left = '0'; 
+        if(!this.isRunning()) {
+            return;
+        }
         clearInterval(this.interval);
+        this.interval = null;
+    }
+
+    isRunning() {
+        return !!this.interval;
     }
 }

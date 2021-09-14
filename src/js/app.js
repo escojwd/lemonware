@@ -3,9 +3,25 @@ import Carousel from './Carousel.js';
 
 initNav();
 
+
 const carouselElements = document.querySelectorAll('.carousel');
+const carousels = [];
 
 carouselElements.forEach(element => {
-    const carousel = new Carousel(element);
-    // carousel.spin();
+    carousels.push(new Carousel(element));
+});
+
+const toggleCarousels = () => {
+    if(window.innerWidth < 1024) {
+        carousels.forEach(carousel => carousel.spin())
+    } else {
+        console.log(carousels);
+        carousels.forEach(carousel => carousel.stop()) 
+    }
+}
+
+toggleCarousels();
+
+window.addEventListener('resize', () => {
+    toggleCarousels();
 });
