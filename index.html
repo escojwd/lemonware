@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/css/tailwind.css">
 
-    <script src="./src/js/script.js" defer></script>
+    <script type="module" src="/src/js/app.js" defer></script>
 </head>
 <body class="font-poppins">
     <header>
@@ -117,12 +117,12 @@
         <div class="mt-40px">
             <div class="carousel overflow-hidden relative">
                 <div class="w-18px z-10 arrow-left absolute top-1/2 transform -translate-y-1/2 left-20px">
-                    <img class="w-full cursor-pointer" src="./src/images/arrow-left.svg" alt="arrow left">
+                    <img class="w-full cursor-pointer arrow-left" src="./src/images/arrow-left.svg" alt="arrow left">
                 </div>
-                <div class="w-18px arrow-right absolute top-1/2 transform -translate-y-1/2 -translate-x-full -calc-vw-20px">
-                    <img class="z-10 w-full cursor-pointer" src="./src/images/arrow-right.svg" alt="arrow right">
+                <div class="z-10 w-18px arrow-right absolute top-1/2 transform -translate-y-1/2 -translate-x-full -calc-vw-20px">
+                    <img class=" w-full cursor-pointer arrow-right" src="./src/images/arrow-right.svg" alt="arrow right">
                 </div>
-                <div class="carousel-items flex min-w-max">
+                <div class="carousel-items relative flex min-w-max">
                     <div class="carouse-item text-center w-screen">
                         <div class="block h-218px w-260px text-center m-auto">
                             <div class="m-auto mb-4 w-100px">
@@ -132,7 +132,7 @@
                             <p class="text-12px">We Keep Your Web build Online 24x7x365. Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
                         </div>
                     </div>
-                    <div class="carouse-item">
+                    <div class="carouse-item text-center w-screen">
                         <div class="block h-218px w-260px text-center m-auto">
                             <div class="m-auto mb-4 w-100px">
                                 <img src="./src/images/hosting.svg" alt="hosting">
@@ -141,7 +141,7 @@
                             <p class="text-12px">We Keep Your Web build Online 24x7x365. Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
                         </div>
                     </div>
-                    <div class="carouse-item carouse-item text-center w-screen">
+                    <div class="carouse-item text-center w-screen">
                         <div class="block h-218px w-260px text-center m-auto">
                             <div class="m-auto mb-4 w-100px">
                                 <img src="./src/images/certificates.svg" alt="certificates">
@@ -150,7 +150,7 @@
                             <p class="text-12px">We Keep Your Web build Online 24x7x365. Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.</p>
                         </div>
                     </div>
-                    <div class="carouse-item carouse-item text-center w-screen">
+                    <div class="carouse-item text-center w-screen">
                         <div class="block h-218px w-260px text-center m-auto">
                             <div class="m-auto  mb-4 w-100px">
                                 <img src="./src/images/support.svg" alt="support">
@@ -165,7 +165,7 @@
                     <!-- Add additional indicators for each slide-->
                     <ol class="flex justify-center gap-10px">
                         <li>
-                            <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-line-color hover:text-focused"></span>
+                            <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-focused hover:text-focused"></span>
                         </li>
                         <li>
                             <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-line-color hover:text-focused"></span>
@@ -189,14 +189,14 @@
         <div class="hidden w-1/2 h-1px mt-50px mx-auto bg-line-color  lg:block "></div>
         <div class="mt-40px">
             <div class="carousel overflow-hidden relative">
-                <div class="w-18px arrow-left absolute top-1/2 transform -translate-y-1/2 left-10px">
+                <div class="w-18px z-10 arrow-left absolute top-1/2 transform -translate-y-1/2 left-10px">
                     <img class="w-18px cursor-pointer" src="./src/images/arrow-left.svg" alt="arrow left">
                 </div>
-                <div class="w-18px arrow-right absolute top-1/2 transform -translate-y-1/2 -translate-x-full -calc-vw-10px">
+                <div class="w-18px z-10 arrow-right absolute top-1/2 transform -translate-y-1/2 -translate-x-full -calc-vw-10px">
                     <img class="w-18px cursor-pointer" src="./src/images/arrow-right.svg" alt="arrow right">
                 </div>
-                <div class="carousel-items flex min-w-max">
-                    <div class="carouse-item w-screen">
+                <div class="carousel-items relative flex min-w-max">
+                    <div class="carousel-item w-screen">
                         <div class="block border-1px rounded-15px w-300px m-auto">
                             <div class="w-237px m-auto">
                                 <div class="mt-34px">
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carouse-item w-screen">
+                    <div class="carousel-item w-screen">
                         <div class="block border-1px rounded-15px w-300px m-auto">
                             <div class="w-237px m-auto">
                                 <div class="mt-34px">
@@ -302,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carouse-item w-screen">
+                    <div class="carousel-item w-screen">
                         <div class="block border-1px rounded-15px w-300px m-auto">
                             <div class="w-237px m-auto">
                                 <div class="mt-34px">
@@ -361,7 +361,7 @@
                     <!-- Add additional indicators for each slide-->
                     <ol class="flex justify-center gap-10px">
                         <li>
-                            <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-line-color hover:text-focused"></span>
+                            <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-focused  hover:text-focused"></span>
                         </li>
                         <li>
                             <span class="w-12px h-12px rounded-full cursor-pointer block text-4xl bg-line-color hover:text-focused"></span>
