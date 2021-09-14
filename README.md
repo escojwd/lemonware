@@ -19,10 +19,13 @@ You will also see any lint errors in the console.
 ### `npm run build`
 
 Builds the app for production to the `dist` folder.\
-Then you can run `npx serve dist` or serve the dist folder with any tool of your choice. \
-It correctly bundles Vite in production mode and optimizes the build for the best performance.
+It correctly bundles Vite in production mode and optimizes the build for the best performance. \
+Then you can run `npx serve dist` or serve the `dist` folder with any tool of your choice.
 
-### Technologies used
+
+<br>
+
+### Technologies used:
 
 * Tailwind CSS
 * PostCSS
