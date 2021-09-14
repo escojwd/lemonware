@@ -15,7 +15,6 @@ const toggleCarousels = () => {
     if(window.innerWidth < 1024) {
         carousels.forEach(carousel => carousel.spin())
     } else {
-        console.log(carousels);
         carousels.forEach(carousel => carousel.stop()) 
     }
 }
